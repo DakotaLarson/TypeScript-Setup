@@ -10,13 +10,15 @@ Using 'outFile' will compile all TypeScript modules into a single file. (For HTT
 
 Using 'outDir' will compile all TypeScript modules into separate files. (For HTTP 2 webservers)
 
-##Installing TypeScript
+## Installing TypeScript
 
 **Install TypeScript globally with NPM first!** 
 
 Local installation of TypeScript is also possible, however, all compilation commands will need to be run through NPM scripts.
 
 Also consider installing tslint, a linting plugin for TypeScript.
+
+SystemJS and lite-server are included as part of the dev dependencies for both configurations of this project and should be installed (lite-server can be removed if you are running things with Node.JS of course).
 
 ## Bundling Modules
 
@@ -28,7 +30,7 @@ Progromatically speaking, there isn't one. The scripts are loaded from different
 
 ## Difference between 'outFile' and 'outDir'
 
-Besides the obvious difference of how the program is compiled, there are also some configuration differences.
+Besides the large difference of how the program is compiled, there are also some configuration differences.
 
 In both cases, the entry (and possibly only) module file is imported, which returns a promise. 
 
@@ -55,13 +57,13 @@ SystemJS.import('/build/Main.js');
 
 ## Closing Remarks
 
-First, if you havent read [this article](https://david-barreto.com/how-to-use-typescript-with-systemjs/), I highly suggest you do. This article shows if nothing else that there is more than one way to skin a cat (TypeScript compilation facilitated by SystemJS). I wanted JavaScript being sent to the client, not TypeScript, hence why I didn't simply follow this approach. 
+First, if you havent read [this article](https://david-barreto.com/how-to-use-typescript-with-systemjs/), I suggest you do. This article shows if nothing else that there is more than one way to skin a cat (TypeScript compilation facilitated by SystemJS vs. this implementation where TypeScript compilation is handled by the user). I wanted JavaScript being sent to the client, not TypeScript, hence why I didn't simply follow this approach. 
 
 Getting this setup also proves challenging when everyone has been asking the same questions since 2015, leading to a load of confusing GitHub and StackOverflow threads that have at times misleading or outdated information. 
 
 I hope this is of some help. If you have more to add or change, create a PR!
 
-Copy the respository.
+Copy the respository (the configuration you want).
 Install everything.
 Profit.
 
