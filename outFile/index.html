@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>TypeScript Test</title>
+    </head>
+    <body>
+        <script src="./systemjs/system.js"></script>
+        <script>
+            SystemJS.import('/build/build.js').then(() => {
+                SystemJS.import('Main');
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>TypeScript Test</title>
+    </head>
+    <body>
+        <script src="./systemjs/system.js"></script>
+        <script>
+            System.config({
+                packages: {
+                    build: {
+                        defaultExtension: 'js'
+                    }
+                } 
+            });
+            SystemJS.import('/build/Main.js');
+        </script>
+    </body>
+</html>

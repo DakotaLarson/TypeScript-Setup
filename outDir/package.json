@@ -1,0 +1,17 @@
+{
+  "name": "typescript-setup",
+  "version": "1.0.0",
+  "description": "TypeScript setup with sample program",
+  "main": "./src/Main.ts",
+  "dependencies": {},
+  "devDependencies": {
+    "lite-server": "^2.4.0",
+    "systemjs": "^0.21.4"
+  },
+  "scripts": {
+    "start": "lite-server",
+    "watch": "tsc -w"
+  },
+  "author": "Dakota Larson",
+  "license": "ISC"
+}
