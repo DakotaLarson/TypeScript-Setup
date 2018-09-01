@@ -55,7 +55,7 @@ SystemJS.import('/build/Main.js');
 
 ## Closing Remarks
 
-First, if you havent read [this article] (https://david-barreto.com/how-to-use-typescript-with-systemjs/), I highly suggest you do. This article shows if nothing else that there is more than one way to skin a cat (TypeScript compilation facilitated by SystemJS). I wanted JavaScript being sent to the client, not TypeScript, hence why I didn't simply follow this approach. 
+First, if you havent read [this article](https://david-barreto.com/how-to-use-typescript-with-systemjs/), I highly suggest you do. This article shows if nothing else that there is more than one way to skin a cat (TypeScript compilation facilitated by SystemJS). I wanted JavaScript being sent to the client, not TypeScript, hence why I didn't simply follow this approach. 
 
 Getting this setup also proves challenging when everyone has been asking the same questions since 2015, leading to a load of confusing GitHub and StackOverflow threads that have at times misleading or outdated information. 
 
